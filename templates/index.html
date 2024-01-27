@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ryan C. Dallavia</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
 
@@ -12,7 +12,7 @@
 	
 	<div class="top-section">
 		<div class="headshot-container">
-			<img src="ya.png" class="resume-image" alt="Ryan's Logo">
+			<img src="{{ url_for('static', filename='images/ya.png') }}" class="resume-image" alt="Ryan's Logo">
 		</div>
 		<div class="contact-info">
 			<h1>Ryan C. Dallavia</h1>
